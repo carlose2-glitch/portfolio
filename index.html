@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/5b4e3ea55f.js" crossorigin="anonymous"></script>
+    <title>Portfolio</title>
+</head>
+<body>
+    <header>
+      <div class="date_and-photo">
+        <p class="name">CARLOS SANCHEZ</p>
+      </div>
+
+      <div class="nav">
+        <a class="github_tag" target="_blank" href="https://github.com/carlose2-glitch">
+            <img class="github" src="./imagenes/github-logo.svg" alt="github">
+        </a>
+        <p class="click-home">HOME</p>
+        <p class="click-projects">PROYECTOS</p>
+        <p class="click-contact">CONTACTAME</p>
+      </div>
+      <!-- menu hamburguesa -->
+      <div class="menu_hamburguer">
+        <i id="icon-hamburguer" class="fa-solid fa-bars"></i>
+        <i id="icon-x" class="fa-solid fa-x"></i>
+      </div>
+
+    </header>
+     <!-- aparece cuando hace click en el menu hamburguesa -->
+    <div class="container_nav-phone">
+        <div class="nav-phone github_link2">
+            <a id="github_link" target="_blank" href="https://github.com/carlose2-glitch">GITHUB</a>
+        </div>
+
+        <div class="nav-phone click_home-nav">
+            <p>HOME</p>
+        </div>
+        <div class="nav-phone click_projects-nav">
+            <p>PROYECTOS</p>
+        </div>
+        <div class="nav-phone click_contact-nav">
+            <p>CONTACTAME</p>
+        </div>
+    
+
+    </div>
+    
+    <!-- presentacion, proyectos y contactame-->
+    <main>
+        <div id="main">
+
+            
+           <div class="container_main">
+            <div class="description">
+                <h2 class="subtitle">HOLA, SOY CARLOS SANCHEZ</h2>
+                <p class="parrafo">aqui encontraras informacion de mi en terminos de programacion.</p>
+            </div>
+            <div class="photo">
+                <img class="image_photo" src="" alt="picture">
+             </div>
+          
+           
+           </div>
+        </div>
+        <div id="projects">
+            <div class="container_projects">
+                <h2 class="nav-subtitle">PROYECTOS</h2>                
+                <div class="container-project">
+                    <div class="project">
+                        <img class="img-projects" src="./imagenes/guia-telefonica.jpeg" alt="guia telefonica">
+                        <button class="btn telefonica-btn">GUIA TELEFONICA</button>
+                    </div>
+                    <div class="project">
+                        <img class="img-projects" src="./imagenes/lista-tareas.jpeg" alt="lista-tareas">
+                        <button class="btn tareas-btn">LISTA DE TAREAS</button>
+                    </div>
+                    <div class="project">
+                        <img class="img-projects" src="./imagenes/memorama.jpeg" alt="memorama">
+                        <button class="btn momerama-btn">MEMORAMA</button>
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+        <div id="contact">
+             
+            <div class="container_contacts">
+                <h2 class="nav-subtitle">CONTACTAME</h2>
+                <form action="">
+                    <div class="form-container form-name">
+                        <p class="form-text">NOMBRE</p>
+                        <input type="text" placeholder="ingresa el nombre">
+                    </div>
+                    <div class="form-container form-email">
+                        <p class="form-text">EMAIL</p>
+                        <input type="text" placeholder="ingresa el correo">
+                    </div>
+                    <div class="form-container form-message">
+                        <p class="form-text">MENSAJE</p>
+                        <input class="input-menssage" type="text">
+                    </div>
+                    <button class="btn-send">ENVIAR</button>
+                </form>
+            </div>
+    
+        </div>
+    </main>
+
+    <script src="./app.js"></script>
+</body>
+</html>
