@@ -7,6 +7,9 @@ const navHamburguer = document.querySelector('.container_nav-phone');
 const clickHomeNav = document.querySelector('.click_home-nav');
 const clickProjectsNav = document.querySelector('.click_projects-nav');
 const clickContactNav = document.querySelector('.click_contact-nav');
+const btnGuiaTelf = document.querySelector('.telefonica-btn');
+const btnListaTareas = document.querySelector('.tareas-btn');
+const btnMemorama = document.querySelector('.momerama-btn');
 
 
 
@@ -52,6 +55,18 @@ clickProjectsNav.addEventListener('click', e =>{
 clickContactNav.addEventListener('click', e =>{
     deleteIconX('./#contact', navHamburguer, iconHamburguer, iconX);
 })
+btnGuiaTelf.addEventListener('click', e =>{
+    e.preventDefault();
+    location.href = 'https://carlose2-glitch.github.io/guia-telefonica/';
+})
+btnListaTareas.addEventListener('click', e =>{
+    e.preventDefault();
+    location.href = 'https://carlose2-glitch.github.io/lista-de-tareas/';
+})
+btnMemorama.addEventListener('click', e=>{
+    e.preventDefault();
+    location.href = 'https://carlose2-glitch.github.io/memorama-completo/';
+} )
 
 
 const deleteIconX = (direction, container, iconHamburguer, iconX) => {
@@ -60,3 +75,25 @@ const deleteIconX = (direction, container, iconHamburguer, iconX) => {
     iconHamburguer.style.display = 'flex';
     iconX.style.display = 'none';
 }
+
+// const btn = document.getElementById('button');
+
+// document.getElementById('form').addEventListener('submit', function(event) {
+//    event.preventDefault();
+
+//    btn.value = 'Sending...';
+
+//    const serviceID = 'default_service';
+//    const templateID = 'template_kj4dc0m';
+   
+
+//    emailjs.sendForm(serviceID, templateID, this)
+//    .then(() => {
+//       btn.value = 'Send Email';
+//       alert('mensaje enviado');
+//       console.log(emailjs.sendForm);
+//     }, (err) => {
+//       btn.value = 'Send Email';
+//       alert(JSON.stringify(err));
+//     });
+// });

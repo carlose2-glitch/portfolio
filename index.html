@@ -12,6 +12,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/5b4e3ea55f.js" crossorigin="anonymous"></script>
+
+    <script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+<script type="text/javascript">
+  emailjs.init('xsnS28GydYM64EYtE')
+</script>
     <title>Portfolio</title>
 </head>
 <body>
@@ -95,20 +102,20 @@
              
             <div class="container_contacts">
                 <h2 class="nav-subtitle">CONTACTAME</h2>
-                <form action="">
+                <form id="form">
                     <div class="form-container form-name">
                         <p class="form-text">NOMBRE</p>
-                        <input type="text" placeholder="ingresa el nombre">
+                        <input type="text" placeholder="ingresa el nombre" id="from_name">
                     </div>
                     <div class="form-container form-email">
                         <p class="form-text">EMAIL</p>
-                        <input type="text" placeholder="ingresa el correo">
+                        <input type="text" placeholder="ingresa el correo" id="email_id">
                     </div>
                     <div class="form-container form-message">
                         <p class="form-text">MENSAJE</p>
-                        <input class="input-menssage" type="text">
+                        <textarea placeholder="ingresa el mensaje" class="input-menssage" name="" id="" cols="30" rows="10" id="message"></textarea>
                     </div>
-                    <button class="btn-send">ENVIAR</button>
+                     <button type="submit" class="btn-send" id="button">ENVIAR</button> 
                 </form>
             </div>
     

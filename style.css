@@ -227,9 +227,21 @@ input{
     background-color: #f0f0f0;
     border-radius: 0.5rem;
     padding-left: 2rem;
+    outline: none;
 }
 .input-menssage{
     height: 9rem;
+}
+textarea{
+    resize: none;
+    border: none;
+    background-color: #f0f0f0;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    color: #666;
+    outline: none;
+    font-family: 'Roboto', sans-serif;
+
 }
 .btn-send{
     width: 6rem;
