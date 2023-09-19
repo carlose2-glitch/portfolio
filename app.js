@@ -12,9 +12,6 @@ const btnListaTareas = document.querySelector('.tareas-btn');
 const btnMemorama = document.querySelector('.momerama-btn');
 
 
-
-
-
 /* eventos de la cabecera*/
 home.addEventListener('click', e =>{
     location.href = './#main';
@@ -76,24 +73,29 @@ const deleteIconX = (direction, container, iconHamburguer, iconX) => {
     iconX.style.display = 'none';
 }
 
-// const btn = document.getElementById('button');
+ const btn = document.getElementById('button');
 
-// document.getElementById('form').addEventListener('submit', function(event) {
-//    event.preventDefault();
+ document.getElementById('form').addEventListener('submit', function(event) {
+    event.preventDefault();
 
-//    btn.value = 'Sending...';
+    btn.value = 'Sending...';
 
-//    const serviceID = 'default_service';
-//    const templateID = 'template_kj4dc0m';
-   
+    const serviceID = 'service_jaqifkg';
+    const templateID = 'template_kj4dc0m';
 
-//    emailjs.sendForm(serviceID, templateID, this)
-//    .then(() => {
-//       btn.value = 'Send Email';
-//       alert('mensaje enviado');
-//       console.log(emailjs.sendForm);
-//     }, (err) => {
-//       btn.value = 'Send Email';
-//       alert(JSON.stringify(err));
-//     });
-// });
+     let params = {
+          from_name: this.from_name.value,
+          message: this.message.value,
+          email_id: this.email_id.value
+    }
+
+     emailjs.send(serviceID, templateID, params)
+    .then(() => {
+       btn.value = 'Send Email';
+       alert('mensaje enviado');
+     }, (err) => {
+       btn.value = 'Send Email';
+       alert(JSON.stringify(err));
+     });
+ });
+
